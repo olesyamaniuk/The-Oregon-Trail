@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -10,9 +10,9 @@
 
 html {
   scroll-behavior: smooth;
-  background: #181b1d;
+  background: #ffffff;
 
-  color: #ffffff;
+  color: #602f0e;
 }
 
 body {
@@ -93,8 +93,8 @@ a {
   transition: background-color 0.3s ease;
   background: transparent;
   display: flex;
-  height: 64px;
-  background: #181b1d;
+  height: 52px;
+  background: #f7e4c6;
 }
 
 .header__background {
@@ -107,7 +107,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #181b1d;
+  background: #f7e4c6;
 }
 .header.is-open .header__background {
   left: 0;
@@ -158,7 +158,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 12px;
+  padding: 6px 16px;
   position: relative;
 }
 
@@ -181,27 +181,29 @@ a {
   padding: 32px;
 
   gap: 28px;
-  background: #181b1d;
+  background: #f7e4c6;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+  text-transform: uppercase;
+
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #ffffff;
+  color: #602f0e;
 
   padding-bottom: 0px;
   border-bottom: 1px solid transparent;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  border-bottom: 1px solid #ffffff;
+  font-size: 18px;
 }
 .header.is-open {
   background-color: transparent;
@@ -221,7 +223,7 @@ a {
   .header {
     width: 100%;
 
-    height: 48px;
+    height: 46px;
     padding: 10px 0px 10px 20px;
     display: flex;
     align-items: center;
@@ -257,7 +259,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 60px;
+    gap: 30px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -265,12 +267,14 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-weight: 500;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
+    text-transform: uppercase;
 
-    padding: 0px 8px;
+    padding: 0px 50px;
     text-decoration: none;
   }
 
@@ -285,7 +289,7 @@ a {
 .home {
   width: 375px;
   height: 812px;
-  padding: 91px 16px 0px;
+  padding: 112px 16px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -296,34 +300,28 @@ a {
 .home__container-top {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 .home-title-img {
-  width: 343px;
-  height: 167.1876220703125px;
+  width: 343;
+  height: 164.8412322998047px;
 }
 .home-title {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-  text-align: center;
-  padding: 0 42px;
-}
-
-.home-text {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142%;
+  font-family: Brawler;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
   letter-spacing: 0%;
-
-  padding: 110px 0 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #0000004d;
+  padding-top: 24px;
 }
+
 .home__google-button_image {
-  width: 192px;
-  height: 64px;
+  width: 209px;
+  height: 89px;
 }
 .home__google-button_link:hover .home__google-button_image {
   transform: scale(1.1);
@@ -333,123 +331,47 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 810px;
-    padding: 95px 767px 0px 100px;
+    height: 754px;
+    padding: 116px 811px 0px 80px;
     background-image: url("/img/home/Home\ \(1\).png");
   }
-  .home__container-top {
-    display: flex;
-    flex-direction: column;
-  }
+
   .home-title-img {
-    width: 517px;
-    height: 252px;
-    margin: auto;
+    width: 549px;
+    height: 264px;
   }
   .home-title {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 110.00000000000001%;
-    letter-spacing: -1%;
-    text-align: center;
-    padding: 0;
-    padding-top: 16px;
-    color: #95999d;
-    width: 268px;
-    margin: auto;
-  }
-  .home-text {
-    color: #95999d;
-
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 142%;
-    padding: 60px 16px 23px 0;
+    font-family: Brawler;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
     letter-spacing: 0%;
-  }
-}
-.why {
-  width: 375px;
-  height: 788px;
-  margin: auto;
-  padding: 40px 0px 0 16px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-image: url("/img/why/Benefits\ -\ About\ Game.png");
-}
+    text-align: center;
+    text-transform: uppercase;
 
-.why-list {
-  padding-top: 32px;
-}
-.why-item {
-  width: 332px;
-  height: 606px;
-  border-radius: 10px;
-  background: #181b1d;
-  margin: 0 4px;
-}
-.why-img {
-  width: 332px;
-  height: 386px;
-  border-radius: 10px 10px 0 0;
-}
-.why-text-bold {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-  height: 52px;
-  margin: 24px 24px 16px;
-}
-.why-text {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142%;
-  letter-spacing: 0%;
-  padding: 0 24px;
-}
-@media screen and (min-width: 1200px) {
-  .why {
-    width: 1440px;
-    height: 916px;
-    padding: 80px 0px 0 100px;
-    background-image: url("/img/why/Benefits\ -\ About\ Game\ \(1\).png");
-  }
-
-  .why-list {
-    padding-top: 60px;
-  }
-  .why-item {
-    margin: 0 12px;
+    padding-top: 24px;
+    width: 385px;
   }
 }
 .about {
-  padding: 40px 16px 0px;
+  padding: 40px 16px;
   margin: auto;
   width: 375px;
-  height: 538px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("/img/why/Benefits\ -\ About\ Game.png");
+  background: #f7e4c6;
 }
 
 .about-title {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
+  font-family: Brawler;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 
 .about-text {
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 600;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
@@ -459,100 +381,44 @@ a {
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 80px 100px 0;
+    padding: 100px 80px;
     width: 1440px;
     height: 310px;
     display: flex;
-    gap: 110px;
-    background-image: url("/img/why/Benefits\ -\ About\ Game\ \(1\).png");
+    gap: 60px;
   }
 
+  .about-title {
+    font-family: Brawler;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90%;
+    letter-spacing: 0%;
+
+    text-transform: uppercase;
+  }
   .about-text {
     padding: 0;
-    width: 714px;
+    width: 754px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 0%;
   }
 }
-.how {
-  width: 375px;
-  height: 1904px;
-  margin: auto;
-  padding: 40px 16px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/How\ to\ play.png");
+.reviews-title {
+  color: #ffffff;
 }
-
-.how-list {
-  padding-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.how-item {
-  width: 343px;
-  height: 324px;
-  padding: 31px 23px;
-  background: #27282a;
-  border: 1px solid #424345;
-
-  border-radius: 10px;
-}
-.how-text-one {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  color: #95999d;
-}
-.how-text-bold {
-  padding: 40px 0 16px;
-
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-}
-.how-text {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142%;
-  color: #95999d;
-  letter-spacing: 0%;
-}
-
-@media screen and (min-width: 1200px) {
-  .how {
-    width: 1440px;
-    height: 662px;
-    padding: 80px 100px 0;
-    background-image: url("/img/How\ to\ play\ \(1\).png");
-  }
-  .how-list {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-  }
-  .how-item {
-    width: 228.8000030517578px;
-    height: 332px;
-  }
-
-  .how-text-bold {
-    height: 78px;
-    padding: 0;
-    margin: 40px 0 16px;
-  }
-}
-
 .reviews {
   width: 375px;
   margin: auto;
-  padding: 40px 0 40px 16px;
+  height: 466px;
+  padding: 40px 0 0px 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/reviews/Reviews\ \(1\).png");
 }
 
 .reviews-list {
@@ -561,45 +427,73 @@ a {
 .reviews-item {
   margin: 0 4px;
   width: 322px;
-  height: 215px;
+  height: 326px;
   border-radius: 10px;
-  padding: 31px;
-  background: #27282a;
-  border: 1px solid #424345;
+  padding: 4px;
+  background: #fff4e0;
+  box-shadow: 0px 4px 30px 0px #00000033;
+}
+.reviews-item-two {
+  width: 314px;
+  height: 318px;
+
+  border-radius: 10px;
+  padding: 24px;
+
+  border: 2px solid #ad7042;
 }
 .reviews-img {
   margin: auto;
 }
 .reviews-text-bold {
-  font-family: Poppins;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  height: 100px;
+  margin: 24px 0 79px;
+}
+.reviews-text-two {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.reviews-text {
+  font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
-  text-align: center;
-  height: 80px;
-  margin: 24px 0 0;
-}
-.reviews-text {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #70777e;
+
+  color: #89756c;
 }
 
 @media screen and (min-width: 1200px) {
   .reviews {
     width: 1440px;
-    padding: 80px 0px 100px 100px;
+    height: 622px;
+    background-image: url("/img/reviews/Reviews.png");
+    padding: 100px 0px 100px 80px;
   }
+
   .reviews-list {
     padding-top: 60px;
   }
   .reviews-item {
     margin: 0 12px;
+    width: 284px;
+    height: 326px;
+    border-radius: 10px;
+    padding: 4px;
+  }
+  .reviews-item-two {
+    width: 276px;
+    height: 318px;
+    padding: 24px;
+    border-width: 2px;
   }
 }
 
@@ -616,10 +510,11 @@ a {
 }
 
 .faq-item {
-  padding: 30px 18px;
   border-radius: 10px;
-  background: #27282a;
-  border: 1px solid #424345;
+  padding: 22px 16px;
+
+  background: #fff4e0;
+  border: 1px solid #f3dbc0;
 }
 
 .faq-question {
@@ -627,11 +522,12 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
+  font-family: Brawler;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 
 .toggle-button {
@@ -644,12 +540,13 @@ a {
 .faq-answer {
   display: none;
   padding-top: 8px;
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
-  color: #95999d;
+
+  color: #89756c;
 }
 @media screen and (min-width: 1200px) {
   .faq {
@@ -664,11 +561,6 @@ a {
   }
 
   .faq-item {
-    padding-top: 32px;
-    padding-right: 24px;
-    padding-bottom: 32px;
-    padding-left: 24px;
-
     border-radius: 10px;
   }
 }
@@ -685,7 +577,7 @@ a {
 }
 .gallery__item {
   width: 332px;
-  height: 184px;
+  height: 181px;
   border-radius: 10px;
 
   overflow: hidden;
@@ -708,8 +600,8 @@ a {
   }
 
   .gallery__item {
-    width: 973px;
-    height: 540px;
+    width: 780px;
+    height: 439px;
     border-radius: 10px;
 
     margin: 0 12px;
@@ -721,62 +613,83 @@ a {
 }
 .features {
   width: 375px;
+  height: 1404px;
   margin: auto;
-  padding: 40px 16px;
+  padding: 30px 16px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Features.png");
 }
 
 .features-list {
-  padding-top: 32px;
+  padding-top: 26px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 .features-item {
   width: 343px;
-  height: 258px;
-  padding: 31px 23px;
+  height: 214px;
   border-radius: 10px;
-  background: #27282a;
-  border: 1px solid #424345;
-}
-.features-number {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142%;
-  letter-spacing: 0%;
-  color: #95999d;
-  width: 34px;
-  height: 34px;
-  border-radius: 40px;
   padding: 4px;
+  background: #fff4e0;
+  box-shadow: 0px 4px 30px 0px #00000033;
+}
+.features-item-two {
+  width: 335px;
+  height: 206px;
+  border-radius: 10px;
+  border: 2px solid #ad7042;
+  padding: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #181b1d;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features-text-bolds {
+  width: 287px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  gap: 10px;
+  background: #fe9e43;
 }
 .features-text-bold {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-  padding: 40px 0 16px;
+  font-family: Brawler;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 287px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-width: 2px 0 2px 0px;
+
+  border-style: solid;
+
+  border-color: #ffbf82;
 }
 .features-text {
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
-  color: #95999d;
+  color: #89756c;
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    padding: 80px 100px 100px;
+    height: 934px;
+    background-image: url("/img/Features.png");
+    padding: 100px 80px 0px;
   }
+
   .features-list {
     padding-top: 60px;
     display: flex;
@@ -785,13 +698,55 @@ a {
     gap: 24px;
   }
   .features-item {
-    width: 397.3333435058594px;
-    height: 258px;
-    gap: 40px;
+    width: 628px;
+    height: 175.3333282470703px;
+    border-radius: 10px;
+    padding: 4px;
+  }
+  .features-item-two {
+    width: 620px;
+    height: 167.3333282470703px;
+    border-radius: 10px;
+    border-width: 2px;
+  }
+  .features-text-bolds {
+    width: 572px;
+    height: 44px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .features-text-bold {
+    font-family: Brawler;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: auto;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-width: 2px 0 2px 0px;
+
+    border-style: solid;
+
+    border-color: #ffbf82;
+  }
+  .features-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 0%;
   }
 }
 .footer {
-  color: #ffffff;
+  background: #f7e4c6;
+  color: #602f0e;
   padding: 40px 16px 32px;
 }
 .footer-container {
@@ -811,19 +766,20 @@ a {
   gap: 14px;
 }
 .footer-text {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+  text-transform: uppercase;
 
   text-decoration: none;
-  color: #ffffff;
+  color: #602f0e;
 }
 
 .footer-copyright {
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
@@ -852,15 +808,17 @@ a {
     gap: 32px;
   }
   .footer-text {
-    font-weight: 500;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
+    text-transform: uppercase;
   }
 
   .footer-copyright {
-    font-family: Poppins;
-    font-weight: 400;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0%;
@@ -869,38 +827,38 @@ a {
 }
 .policy-terms-container {
   padding: 100px 16px 40px;
-  background: #ffffff;
-  color: #181b1d;
+  color: #602f0e;
 }
 .policy-terms-title {
-  font-family: Poppins;
-  font-weight: 600;
+  font-family: Brawler;
+  font-weight: 700;
   font-size: 40px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-  text-align: center;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 
 .policy-terms-text {
   padding-top: 20px;
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
+  font-family: Brawler;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 .policy-terms-texts {
   padding-top: 8px;
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
 }
 .policy-terms-text-one {
   padding-top: 20px;
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
@@ -910,9 +868,8 @@ a {
   list-style-type: disc;
   padding: 20px 0 20px 25px;
   display: flex;
-  flex-direction: column;
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
@@ -921,8 +878,8 @@ a {
 .terms-lists {
   list-style-type: disc;
   padding-left: 25px;
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
@@ -942,21 +899,23 @@ a {
     margin: auto;
   }
   .policy-terms-title {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 110.00000000000001%;
-    letter-spacing: -1%;
-    text-align: center;
+    font-family: Brawler;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding-top: 40px;
   }
 
   .policy-terms-text {
     padding-top: 40px;
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 110.00000000000001%;
-    letter-spacing: -1%;
+    font-family: Brawler;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
 }
 
@@ -974,13 +933,13 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Poppins;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
   line-height: 142%;
   letter-spacing: 0%;
 
-  color: #181b1d;
+  color: #602f0e;
 }
 .cookie-button-container {
   padding: 30px 0 0;
@@ -994,21 +953,23 @@ a {
 .cookie-button {
   border: none;
   background-color: transparent;
-  background: #ffffff;
-  border: 1px solid #181b1d;
+
+  border: 1px solid #fe9e43;
   width: 167.5px;
   padding: 16px 0;
   border-radius: 4px;
-  font-family: Poppins;
+  font-family: Montserrat;
   font-weight: 600;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 110.00000000000001%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #181b1d;
+
+  color: #fe9e43;
 }
 #accept-cookies {
-  background: #181b1d;
+  background: #fe9e43;
+
   color: #ffffff;
 }
 .close-popup {
@@ -1020,8 +981,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Poppins;
-    font-weight: 400;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 18px;
     line-height: 142%;
     letter-spacing: 0%;
